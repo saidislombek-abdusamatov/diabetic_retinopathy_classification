@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image
 import cv2
 
-model = torch.load('/kaggle/input/pytorch-model/full_model.pth', map_location=torch.device('cpu'))
+model = torch.load('pytorch-model/full_model.pth', map_location=torch.device('cpu'))
 names = ['No DR','Mild','Moderate','Severe','Proliferative DR']
 
 st.title('Diabetic Retinopathy Detection')
