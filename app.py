@@ -9,7 +9,7 @@ import cv2
 model = torch.load('full_model.pth', map_location=torch.device('cpu'))
 names = ['No DR','Mild','Moderate','Severe','Proliferative DR']
 
-st.title('Diabetic Retinopathy Detection')
+st.title('Diabetic Retinopathy Detection (Efficientnet-b3)')
 st.divider()
 
 on = st.toggle('Single eye')
